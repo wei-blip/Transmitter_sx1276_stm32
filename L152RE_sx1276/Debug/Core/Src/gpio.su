@@ -1,0 +1,4 @@
+gpio.c:41:6:MX_GPIO_Init	48	static
+gpio.c:106:6:GpioWrite	16	static
+gpio.c:110:10:GpioRead	16	static
+gpio.c:114:6:GpioToggle	16	static

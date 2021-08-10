@@ -1,0 +1,7 @@
+rf_test.c:46:6:init_rf	56	static
+rf_test.c:109:6:ping_pong_rf	16	static
+rf_test.c:276:6:OnTxDone	8	static
+rf_test.c:284:6:OnRxDone	24	static
+rf_test.c:297:6:OnTxTimeout	8	static
+rf_test.c:303:6:OnRxTimeout	8	static
+rf_test.c:309:6:OnRxError	8	static

@@ -1,0 +1,10 @@
+08:57:15 **** Incremental Build of configuration Debug for project stm32_sx1276 ****
+make -j8 all 
+arm-none-eabi-size   stm32_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8868	     20	   1724	  10612	   2974	stm32_sx1276.elf
+Finished building: default.size.stdout
+ 
+
+08:57:16 Build Finished. 0 errors, 0 warnings. (took 650ms)
+
