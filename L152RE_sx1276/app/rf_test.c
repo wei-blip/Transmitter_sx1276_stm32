@@ -1,21 +1,13 @@
-/*
- * rf_test.c
- *
- *  Created on: May 12, 2021
- *      Author: user
- */
-
 #include "rf-test.h"
 #include "timer.h"
-
 // #define RTC_TEST
 // #define TX_TEST
-#define UART_TEST
+// #define UART_TEST
+
 
 #ifdef UART_TEST
   uint8_t data_UART[] = {0x00, 0x00, 0x00, 0x00};
 #define MAX_COUNT_OF_PACKETS 100
-  static bool IsSend = true;
 #endif
 static uint32_t count = 0;
 
@@ -126,7 +118,6 @@ void ping_pong_rf (void)
 #ifdef UART_TEST
   State = TX;
   while(1){
-      while(IsSend){
 	  switch( State )
 	  	{
 		  case TX:
@@ -142,14 +133,14 @@ void ping_pong_rf (void)
 		  case LOWPOWER:
 		  default:
 		  break;
-	 }
-      }
-      if ( count == MAX_COUNT_OF_PACKETS ) {
-	  count = 0;
-	  IsSend = false;
-      }
+    }
   }
 #endif
+
+#ifdef PER_TEST
+  time_t aver_time = AverageTime(10, 100);
+#endif
+
   HAL_GPIO_WritePin(LED_EXT_GPIO_Port, LED_EXT_Pin, RESET);
   Radio.Rx( RX_TIMEOUT_VALUE );
 
@@ -232,8 +223,6 @@ void ping_pong_rf (void)
              State = LOWPOWER;
              break;
          case RX_TIMEOUT:
-//	     State = RX;
-//	     break;
          case RX_ERROR:
              if( isMaster == true )
              {
@@ -282,6 +271,9 @@ void OnTxDone( void )
 #ifdef UART_TEST
     count++;
 #endif
+#ifdef PER_TEST
+    count++;
+#endif
 }
 
 void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
@@ -295,9 +287,6 @@ void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
     RssiValue = rssi;
     SnrValue = snr;
     State = RX;
-#ifdef UART_TEST
-    IsSend = true;
-#endif
 }
 
 void OnTxTimeout( void )
@@ -319,5 +308,52 @@ void OnRxError( void )
 }
 
 
+// Перед использованием этой функции необходимо вызвать Radio.Send()
+// Сама функция Radio_TX должна крутиться в бесконечном цикле
+void Radio_TX (uint8_t *pData, uint8_t size ) {
+	  switch( State )
+	  	{
+		  case TX:
+		  Radio.Send( pData, size );
+		  State = LOWPOWER;
+		  break;
+		  case RX_TIMEOUT:
+		  case TX_TIMEOUT:
+		  case RX:
+		  case RX_ERROR:
+		  case LOWPOWER:
+		  default:
+		  break;
+  }
+}
 
+#ifdef PER_TEST
+// Просто отправляет числа от 1 до max_count_of_packets
+// Время вернется в мс
+uint32_t PerMeasTime ( int max_count_of_packets ) {
+	uint8_t data[] = {0, 0, 0, 0};
+	uint32_t curT = HAL_GetTick();
+	State = TX;
+	*( uint32_t* )data = count;
+	while( count < max_count_of_packets ) {
+		Radio_TX( data, sizeof(data) );
+		HAL_Delay(50);
+	}
+	count = 0;
+	return ( HAL_GetTick() - curT );
+}
 
+// Считает среднее время отправления max_count_of_packets пакетов
+// Усредняет NumOfAver раз
+uint32_t AverageTime ( uint8_t NumOfAver, int max_count_of_packets ) {
+	uint32_t time;
+	uint8_t i = 0;
+	while (i < NumOfAver) {
+		time += PerMeasTime(max_count_of_packets);
+		i++;
+	}
+	return ( time / NumOfAver );
+}
+#endif
+
+// Обработчик прерываний в sx1276mb1las-board.c

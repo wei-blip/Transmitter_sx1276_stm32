@@ -1,0 +1,22 @@
+/*
+ * PerBerMeasure.c
+ *
+ *  Created on: 12 авг. 2021 г.
+ *      Author: user
+ */
+#include "PerBerMeasure.h"
+
+
+clock_t PerMeasTime ( int max_count_of_packets) {
+	int i = 0;
+	clock_t time_begin = clock();
+	uint8_t data = 0;
+	Radio.Send( data, sizeof(data) );
+	while( i < max_count_of_packets) {
+		*( int* )data = i;
+		Radio_TX( data, sizeof(data) );
+		i++;
+	}
+	return ( clock() - time_begin );
+}
+

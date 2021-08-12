@@ -305,6 +305,8 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     case DIO_5_Pin:
       fptr = DioIrq[5];
       break;
+    case GPIO_PIN_13:
+      break;
     default:
       break;
 }

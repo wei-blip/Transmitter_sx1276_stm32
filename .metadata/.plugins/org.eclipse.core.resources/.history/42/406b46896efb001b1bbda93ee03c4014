@@ -1,0 +1,18 @@
+/*
+ * PerBerMeasure.h
+ *
+ *  Created on: 12 авг. 2021 г.
+ *      Author: user
+ */
+
+#ifndef PERBERMEASURE_H_
+#define PERBERMEASURE_H_
+
+
+
+#endif /* PERBERMEASURE_H_ */
+
+#include "rf-test.h"
+#include "time.h"
+
+time_t PerMeasTime ( int max_count_of_packets);

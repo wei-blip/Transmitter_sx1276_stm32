@@ -18,6 +18,7 @@
 #include "timer.h"
 #include "radio.h"
 #include "sx1276.h"
+#include "time.h"
 
 #define REGION_EU433
 #define USE_MODEM_FSK
@@ -94,6 +95,16 @@
 #endif
 
 void ping_pong_rf (void);
+void Radio_TX ( uint8_t *pData, uint8_t size );
+
+#define PER_TEST
+
+#ifdef PER_TEST
+uint32_t AverageTime ( uint8_t NumOfAver, int max_count_of_packets );
+
+// измеряет время передачи max_count_of_packets пакетов
+uint32_t PerMeasTime ( int max_count_of_packets);
+#endif
 
 void OnTxDone( void );
 
