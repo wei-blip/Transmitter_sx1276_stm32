@@ -103,7 +103,10 @@ void Radio_TX ( uint8_t *pData, uint8_t size );
 uint32_t AverageTime ( uint8_t NumOfAver, int max_count_of_packets );
 
 // измеряет время передачи max_count_of_packets пакетов
-uint32_t PerMeasTime ( int max_count_of_packets);
+uint32_t PerMeasTime ( int max_count_of_packets );
+
+// меняется при нажатии синей кнопки
+bool ButtonPushed = false;
 #endif
 
 void OnTxDone( void );

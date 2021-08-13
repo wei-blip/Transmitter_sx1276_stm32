@@ -5378,3 +5378,109 @@ arm-none-eabi-size   L152RE_sx1276.elf
   28608	     48	   4632	  33288	   8208	L152RE_sx1276.elf
 Finished building: default.size.stdout
  
+17:07:03 **** Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+../app/rf_test.c: In function 'ping_pong_rf':
+../app/rf_test.c:141:10: warning: unused variable 'aver_time' [-Wunused-variable]
+  141 |   time_t aver_time = AverageTime(10, 100);
+      |          ^~~~~~~~~
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+Finished building: L152RE_sx1276.bin
+ 
+   text	   data	    bss	    dec	    hex	filename
+  28608	     48	   4632	  33288	   8208	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.list
+ 
+17:09:22 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+../app/rf_test.c: In function 'ping_pong_rf':
+../app/rf_test.c:141:10: warning: unused variable 'aver_time' [-Wunused-variable]
+  141 |   time_t aver_time = AverageTime(100, 50);
+      |          ^~~~~~~~~
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28608	     48	   4632	  33288	   8208	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+17:21:00 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/rf_test.c: In function 'ping_pong_rf':
+../app/rf_test.c:141:12: warning: unused variable 'aver_time' [-Wunused-variable]
+  141 |   uint32_t aver_time = AverageTime(10, 50, 0); // замеряем время требуемое для передачи последовательности
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28616	     48	   4632	  33296	   8210	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+17:21:56 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+../app/rf_test.c: In function 'ping_pong_rf':
+../app/rf_test.c:141:12: warning: unused variable 'aver_time' [-Wunused-variable]
+  141 |   uint32_t aver_time = AverageTime(10, 50, 0); // замеряем время требуемое для передачи последовательности
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28616	     48	   4632	  33296	   8210	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+17:22:40 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+../app/rf_test.c: In function 'ping_pong_rf':
+../app/rf_test.c:141:12: warning: unused variable 'aver_time' [-Wunused-variable]
+  141 |   uint32_t aver_time = AverageTime(10, 50, 0); // замеряем время требуемое для передачи последовательности
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28616	     48	   4632	  33296	   8210	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 

@@ -1,5 +1,5 @@
 rf_test.c:38:6:init_rf	56	static
-rf_test.c:101:6:ping_pong_rf	24	static
+rf_test.c:101:6:ping_pong_rf	16	static
 rf_test.c:266:6:OnTxDone	8	static
 rf_test.c:279:6:OnRxDone	24	static
 rf_test.c:292:6:OnTxTimeout	8	static

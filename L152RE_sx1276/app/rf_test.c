@@ -138,7 +138,15 @@ void ping_pong_rf (void)
 #endif
 
 #ifdef PER_TEST
-  time_t aver_time = AverageTime(10, 100);
+  uint32_t aver_time = AverageTime(10, 50, 0); // замеряем среднее время требуемое для передачи последовательности
+  while ( !ButtonPushed ); // в этот момент настраиваем приёмную сторону для приёма сигнала
+  while ( 1 ) {
+	  uint32_t TimeB = HAL_GetTick();
+	  PerMeasTime(50); // передаётся "зубец пилы"
+	  while ( ( HAL_GetTick() - TimeB ) >= aver_time );
+	  HAL_Delay(30);	// небольшая задержка чтобы наверняка и продолжаем
+  }
+
 #endif
 
   HAL_GPIO_WritePin(LED_EXT_GPIO_Port, LED_EXT_Pin, RESET);
@@ -337,7 +345,7 @@ uint32_t PerMeasTime ( int max_count_of_packets ) {
 	*( uint32_t* )data = count;
 	while( count < max_count_of_packets ) {
 		Radio_TX( data, sizeof(data) );
-		HAL_Delay(50);
+		HAL_Delay(30);
 	}
 	count = 0;
 	return ( HAL_GetTick() - curT );

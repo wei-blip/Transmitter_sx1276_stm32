@@ -4769,7 +4769,7 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000008000000                g_pfnVectors
                 0x000000000800013c                . = ALIGN (0x4)
 
-.text           0x000000000800013c     0x6ce4
+.text           0x000000000800013c     0x6cec
                 0x000000000800013c                . = ALIGN (0x4)
  *(.text)
  .text          0x000000000800013c       0x40 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
@@ -5246,261 +5246,261 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .text.init_rf  0x0000000008005a48       0xe4 app/rf_test.o
                 0x0000000008005a48                init_rf
  .text.ping_pong_rf
-                0x0000000008005b2c      0x264 app/rf_test.o
+                0x0000000008005b2c      0x25c app/rf_test.o
                 0x0000000008005b2c                ping_pong_rf
  .text.OnTxDone
-                0x0000000008005d90       0x38 app/rf_test.o
-                0x0000000008005d90                OnTxDone
+                0x0000000008005d88       0x38 app/rf_test.o
+                0x0000000008005d88                OnTxDone
  .text.OnRxDone
-                0x0000000008005dc8       0x84 app/rf_test.o
-                0x0000000008005dc8                OnRxDone
+                0x0000000008005dc0       0x84 app/rf_test.o
+                0x0000000008005dc0                OnRxDone
  .text.OnTxTimeout
-                0x0000000008005e4c       0x1c app/rf_test.o
-                0x0000000008005e4c                OnTxTimeout
+                0x0000000008005e44       0x1c app/rf_test.o
+                0x0000000008005e44                OnTxTimeout
  .text.OnRxTimeout
-                0x0000000008005e68       0x1c app/rf_test.o
-                0x0000000008005e68                OnRxTimeout
+                0x0000000008005e60       0x1c app/rf_test.o
+                0x0000000008005e60                OnRxTimeout
  .text.OnRxError
-                0x0000000008005e84       0x1c app/rf_test.o
-                0x0000000008005e84                OnRxError
+                0x0000000008005e7c       0x1c app/rf_test.o
+                0x0000000008005e7c                OnRxError
  .text.Radio_TX
-                0x0000000008005ea0       0x3c app/rf_test.o
-                0x0000000008005ea0                Radio_TX
+                0x0000000008005e98       0x3c app/rf_test.o
+                0x0000000008005e98                Radio_TX
  .text.PerMeasTime
-                0x0000000008005edc       0x60 app/rf_test.o
-                0x0000000008005edc                PerMeasTime
+                0x0000000008005ed4       0x68 app/rf_test.o
+                0x0000000008005ed4                PerMeasTime
  .text.AverageTime
-                0x0000000008005f3c       0x3e app/rf_test.o
+                0x0000000008005f3c       0x46 app/rf_test.o
                 0x0000000008005f3c                AverageTime
- *fill*         0x0000000008005f7a        0x2 
- .text.RtcInit  0x0000000008005f7c       0xd4 app/rtc-board.o
-                0x0000000008005f7c                RtcInit
+ *fill*         0x0000000008005f82        0x2 
+ .text.RtcInit  0x0000000008005f84       0xd4 app/rtc-board.o
+                0x0000000008005f84                RtcInit
  .text.RtcSetTimerContext
-                0x0000000008006050       0x28 app/rtc-board.o
-                0x0000000008006050                RtcSetTimerContext
+                0x0000000008006058       0x28 app/rtc-board.o
+                0x0000000008006058                RtcSetTimerContext
  .text.RtcGetTimerContext
-                0x0000000008006078       0x14 app/rtc-board.o
-                0x0000000008006078                RtcGetTimerContext
+                0x0000000008006080       0x14 app/rtc-board.o
+                0x0000000008006080                RtcGetTimerContext
  .text.RtcGetMinimumTimeout
-                0x000000000800608c        0xe app/rtc-board.o
-                0x000000000800608c                RtcGetMinimumTimeout
+                0x0000000008006094        0xe app/rtc-board.o
+                0x0000000008006094                RtcGetMinimumTimeout
  .text.RtcMs2Tick
-                0x000000000800609a       0x3a app/rtc-board.o
-                0x000000000800609a                RtcMs2Tick
+                0x00000000080060a2       0x3a app/rtc-board.o
+                0x00000000080060a2                RtcMs2Tick
  .text.RtcTick2Ms
-                0x00000000080060d4       0x38 app/rtc-board.o
-                0x00000000080060d4                RtcTick2Ms
+                0x00000000080060dc       0x38 app/rtc-board.o
+                0x00000000080060dc                RtcTick2Ms
  .text.RtcSetAlarm
-                0x000000000800610c       0x1a app/rtc-board.o
-                0x000000000800610c                RtcSetAlarm
- *fill*         0x0000000008006126        0x2 
+                0x0000000008006114       0x1a app/rtc-board.o
+                0x0000000008006114                RtcSetAlarm
+ *fill*         0x000000000800612e        0x2 
  .text.RtcStopAlarm
-                0x0000000008006128       0x34 app/rtc-board.o
-                0x0000000008006128                RtcStopAlarm
+                0x0000000008006130       0x34 app/rtc-board.o
+                0x0000000008006130                RtcStopAlarm
  .text.RtcStartAlarm
-                0x000000000800615c      0x1f0 app/rtc-board.o
-                0x000000000800615c                RtcStartAlarm
+                0x0000000008006164      0x1f0 app/rtc-board.o
+                0x0000000008006164                RtcStartAlarm
  .text.RtcGetTimerValue
-                0x000000000800634c       0x26 app/rtc-board.o
-                0x000000000800634c                RtcGetTimerValue
- *fill*         0x0000000008006372        0x2 
+                0x0000000008006354       0x26 app/rtc-board.o
+                0x0000000008006354                RtcGetTimerValue
+ *fill*         0x000000000800637a        0x2 
  .text.RtcGetTimerElapsedTime
-                0x0000000008006374       0x30 app/rtc-board.o
-                0x0000000008006374                RtcGetTimerElapsedTime
+                0x000000000800637c       0x30 app/rtc-board.o
+                0x000000000800637c                RtcGetTimerElapsedTime
  .text.RtcGetCalendarValue
-                0x00000000080063a4      0x12c app/rtc-board.o
+                0x00000000080063ac      0x12c app/rtc-board.o
  .text.HAL_RTC_AlarmAEventCallback
-                0x00000000080064d0       0x14 app/rtc-board.o
-                0x00000000080064d0                HAL_RTC_AlarmAEventCallback
+                0x00000000080064d8       0x14 app/rtc-board.o
+                0x00000000080064d8                HAL_RTC_AlarmAEventCallback
  .text.SX1276IoInit
-                0x00000000080064e4       0x68 app/sx1276mb1las-board.o
-                0x00000000080064e4                SX1276IoInit
+                0x00000000080064ec       0x68 app/sx1276mb1las-board.o
+                0x00000000080064ec                SX1276IoInit
  .text.SX1276IoIrqInit
-                0x000000000800654c       0x48 app/sx1276mb1las-board.o
-                0x000000000800654c                SX1276IoIrqInit
+                0x0000000008006554       0x48 app/sx1276mb1las-board.o
+                0x0000000008006554                SX1276IoIrqInit
  .text.SX1276SetBoardTcxo
-                0x0000000008006594       0x14 app/sx1276mb1las-board.o
-                0x0000000008006594                SX1276SetBoardTcxo
+                0x000000000800659c       0x14 app/sx1276mb1las-board.o
+                0x000000000800659c                SX1276SetBoardTcxo
  .text.SX1276GetBoardTcxoWakeupTime
-                0x00000000080065a8        0xe app/sx1276mb1las-board.o
-                0x00000000080065a8                SX1276GetBoardTcxoWakeupTime
- *fill*         0x00000000080065b6        0x2 
+                0x00000000080065b0        0xe app/sx1276mb1las-board.o
+                0x00000000080065b0                SX1276GetBoardTcxoWakeupTime
+ *fill*         0x00000000080065be        0x2 
  .text.SX1276Reset
-                0x00000000080065b8       0x40 app/sx1276mb1las-board.o
-                0x00000000080065b8                SX1276Reset
+                0x00000000080065c0       0x40 app/sx1276mb1las-board.o
+                0x00000000080065c0                SX1276Reset
  .text.SX1276SetRfTxPower
-                0x00000000080065f8      0x160 app/sx1276mb1las-board.o
-                0x00000000080065f8                SX1276SetRfTxPower
+                0x0000000008006600      0x160 app/sx1276mb1las-board.o
+                0x0000000008006600                SX1276SetRfTxPower
  .text.SX1276GetPaSelect
-                0x0000000008006758       0x24 app/sx1276mb1las-board.o
+                0x0000000008006760       0x24 app/sx1276mb1las-board.o
  .text.SX1276SetAntSwLowPower
-                0x000000000800677c       0x3c app/sx1276mb1las-board.o
-                0x000000000800677c                SX1276SetAntSwLowPower
+                0x0000000008006784       0x3c app/sx1276mb1las-board.o
+                0x0000000008006784                SX1276SetAntSwLowPower
  .text.SX1276AntSwInit
-                0x00000000080067b8        0xc app/sx1276mb1las-board.o
-                0x00000000080067b8                SX1276AntSwInit
+                0x00000000080067c0        0xc app/sx1276mb1las-board.o
+                0x00000000080067c0                SX1276AntSwInit
  .text.SX1276AntSwDeInit
-                0x00000000080067c4        0xc app/sx1276mb1las-board.o
-                0x00000000080067c4                SX1276AntSwDeInit
+                0x00000000080067cc        0xc app/sx1276mb1las-board.o
+                0x00000000080067cc                SX1276AntSwDeInit
  .text.SX1276SetAntSw
-                0x00000000080067d0       0x14 app/sx1276mb1las-board.o
-                0x00000000080067d0                SX1276SetAntSw
+                0x00000000080067d8       0x14 app/sx1276mb1las-board.o
+                0x00000000080067d8                SX1276SetAntSw
  .text.SX1276CheckRfFrequency
-                0x00000000080067e4       0x14 app/sx1276mb1las-board.o
-                0x00000000080067e4                SX1276CheckRfFrequency
+                0x00000000080067ec       0x14 app/sx1276mb1las-board.o
+                0x00000000080067ec                SX1276CheckRfFrequency
  .text.SX1276GetDio1PinState
-                0x00000000080067f8       0x14 app/sx1276mb1las-board.o
-                0x00000000080067f8                SX1276GetDio1PinState
+                0x0000000008006800       0x14 app/sx1276mb1las-board.o
+                0x0000000008006800                SX1276GetDio1PinState
  .text.HAL_GPIO_EXTI_Callback
-                0x000000000800680c       0xa4 app/sx1276mb1las-board.o
-                0x000000000800680c                HAL_GPIO_EXTI_Callback
+                0x0000000008006814       0xa4 app/sx1276mb1las-board.o
+                0x0000000008006814                HAL_GPIO_EXTI_Callback
  .text.TimerInit
-                0x00000000080068b0       0x3e app/timer.o
-                0x00000000080068b0                TimerInit
- *fill*         0x00000000080068ee        0x2 
+                0x00000000080068b8       0x3e app/timer.o
+                0x00000000080068b8                TimerInit
+ *fill*         0x00000000080068f6        0x2 
  .text.TimerStart
-                0x00000000080068f0       0xa0 app/timer.o
-                0x00000000080068f0                TimerStart
+                0x00000000080068f8       0xa0 app/timer.o
+                0x00000000080068f8                TimerStart
  .text.TimerInsertTimer
-                0x0000000008006990       0x60 app/timer.o
+                0x0000000008006998       0x60 app/timer.o
  .text.TimerInsertNewHeadTimer
-                0x00000000080069f0       0x3c app/timer.o
+                0x00000000080069f8       0x3c app/timer.o
  .text.TimerIrqHandler
-                0x0000000008006a2c      0x104 app/timer.o
-                0x0000000008006a2c                TimerIrqHandler
+                0x0000000008006a34      0x104 app/timer.o
+                0x0000000008006a34                TimerIrqHandler
  .text.TimerStop
-                0x0000000008006b30       0xf4 app/timer.o
-                0x0000000008006b30                TimerStop
+                0x0000000008006b38       0xf4 app/timer.o
+                0x0000000008006b38                TimerStop
  .text.TimerExists
-                0x0000000008006c24       0x38 app/timer.o
+                0x0000000008006c2c       0x38 app/timer.o
  .text.TimerSetValue
-                0x0000000008006c5c       0x42 app/timer.o
-                0x0000000008006c5c                TimerSetValue
+                0x0000000008006c64       0x42 app/timer.o
+                0x0000000008006c64                TimerSetValue
  .text.TimerGetCurrentTime
-                0x0000000008006c9e       0x1c app/timer.o
-                0x0000000008006c9e                TimerGetCurrentTime
+                0x0000000008006ca6       0x1c app/timer.o
+                0x0000000008006ca6                TimerGetCurrentTime
  .text.TimerGetElapsedTime
-                0x0000000008006cba       0x36 app/timer.o
-                0x0000000008006cba                TimerGetElapsedTime
+                0x0000000008006cc2       0x36 app/timer.o
+                0x0000000008006cc2                TimerGetElapsedTime
  .text.TimerSetTimeout
-                0x0000000008006cf0       0x48 app/timer.o
- .text.memcpy1  0x0000000008006d38       0x36 app/utilities.o
-                0x0000000008006d38                memcpy1
- *fill*         0x0000000008006d6e        0x2 
+                0x0000000008006cf8       0x48 app/timer.o
+ .text.memcpy1  0x0000000008006d40       0x36 app/utilities.o
+                0x0000000008006d40                memcpy1
+ *fill*         0x0000000008006d76        0x2 
  .text.__libc_init_array
-                0x0000000008006d70       0x48 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
-                0x0000000008006d70                __libc_init_array
- .text.memcpy   0x0000000008006db8       0x1c c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
-                0x0000000008006db8                memcpy
- .text.memset   0x0000000008006dd4       0x10 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
-                0x0000000008006dd4                memset
- .text.strncmp  0x0000000008006de4       0x24 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-strncmp.o)
-                0x0000000008006de4                strncmp
+                0x0000000008006d78       0x48 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-init.o)
+                0x0000000008006d78                __libc_init_array
+ .text.memcpy   0x0000000008006dc0       0x1c c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
+                0x0000000008006dc0                memcpy
+ .text.memset   0x0000000008006ddc       0x10 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
+                0x0000000008006ddc                memset
+ .text.strncmp  0x0000000008006dec       0x24 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-strncmp.o)
+                0x0000000008006dec                strncmp
  *(.glue_7)
- .glue_7        0x0000000008006e08        0x0 linker stubs
+ .glue_7        0x0000000008006e10        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008006e08        0x0 linker stubs
+ .glue_7t       0x0000000008006e10        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008006e08        0x0 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+ .eh_frame      0x0000000008006e10        0x0 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008006e08        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
-                0x0000000008006e08                _init
- .init          0x0000000008006e0c        0x8 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
+ .init          0x0000000008006e10        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
+                0x0000000008006e10                _init
+ .init          0x0000000008006e14        0x8 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008006e14        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
-                0x0000000008006e14                _fini
- .fini          0x0000000008006e18        0x8 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
-                0x0000000008006e20                . = ALIGN (0x4)
-                0x0000000008006e20                _etext = .
+ .fini          0x0000000008006e1c        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crti.o
+                0x0000000008006e1c                _fini
+ .fini          0x0000000008006e20        0x8 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtn.o
+                0x0000000008006e28                . = ALIGN (0x4)
+                0x0000000008006e28                _etext = .
 
-.vfp11_veneer   0x0000000008006e20        0x0
- .vfp11_veneer  0x0000000008006e20        0x0 linker stubs
+.vfp11_veneer   0x0000000008006e28        0x0
+ .vfp11_veneer  0x0000000008006e28        0x0 linker stubs
 
-.v4_bx          0x0000000008006e20        0x0
- .v4_bx         0x0000000008006e20        0x0 linker stubs
+.v4_bx          0x0000000008006e28        0x0
+ .v4_bx         0x0000000008006e28        0x0 linker stubs
 
-.iplt           0x0000000008006e20        0x0
- .iplt          0x0000000008006e20        0x0 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+.iplt           0x0000000008006e28        0x0
+ .iplt          0x0000000008006e28        0x0 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.rodata         0x0000000008006e20      0x198
-                0x0000000008006e20                . = ALIGN (0x4)
+.rodata         0x0000000008006e28      0x198
+                0x0000000008006e28                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.PLLMulTable
-                0x0000000008006e20        0x9 Core/Src/system_stm32l1xx.o
-                0x0000000008006e20                PLLMulTable
- *fill*         0x0000000008006e29        0x3 
+                0x0000000008006e28        0x9 Core/Src/system_stm32l1xx.o
+                0x0000000008006e28                PLLMulTable
+ *fill*         0x0000000008006e31        0x3 
  .rodata.AHBPrescTable
-                0x0000000008006e2c       0x10 Core/Src/system_stm32l1xx.o
-                0x0000000008006e2c                AHBPrescTable
+                0x0000000008006e34       0x10 Core/Src/system_stm32l1xx.o
+                0x0000000008006e34                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008006e3c        0x8 Core/Src/system_stm32l1xx.o
-                0x0000000008006e3c                APBPrescTable
+                0x0000000008006e44        0x8 Core/Src/system_stm32l1xx.o
+                0x0000000008006e44                APBPrescTable
  .rodata.RadioRegsInit
-                0x0000000008006e44       0x30 app/LoRaMac-node/src/radio/sx1276/sx1276.o
-                0x0000000008006e44                RadioRegsInit
+                0x0000000008006e4c       0x30 app/LoRaMac-node/src/radio/sx1276/sx1276.o
+                0x0000000008006e4c                RadioRegsInit
  .rodata.FskBandwidths
-                0x0000000008006e74       0xb0 app/LoRaMac-node/src/radio/sx1276/sx1276.o
-                0x0000000008006e74                FskBandwidths
+                0x0000000008006e7c       0xb0 app/LoRaMac-node/src/radio/sx1276/sx1276.o
+                0x0000000008006e7c                FskBandwidths
  .rodata.PingMsg
-                0x0000000008006f24        0x5 app/rf_test.o
-                0x0000000008006f24                PingMsg
- *fill*         0x0000000008006f29        0x3 
- .rodata.PongMsg
                 0x0000000008006f2c        0x5 app/rf_test.o
-                0x0000000008006f2c                PongMsg
+                0x0000000008006f2c                PingMsg
  *fill*         0x0000000008006f31        0x3 
+ .rodata.PongMsg
+                0x0000000008006f34        0x5 app/rf_test.o
+                0x0000000008006f34                PongMsg
+ *fill*         0x0000000008006f39        0x3 
  .rodata.DaysInMonth
-                0x0000000008006f34        0xc app/rtc-board.o
+                0x0000000008006f3c        0xc app/rtc-board.o
  .rodata.DaysInMonthLeapYear
-                0x0000000008006f40        0xc app/rtc-board.o
- .rodata.Radio  0x0000000008006f4c       0x6c app/sx1276mb1las-board.o
-                0x0000000008006f4c                Radio
-                0x0000000008006fb8                . = ALIGN (0x4)
+                0x0000000008006f48        0xc app/rtc-board.o
+ .rodata.Radio  0x0000000008006f54       0x6c app/sx1276mb1las-board.o
+                0x0000000008006f54                Radio
+                0x0000000008006fc0                . = ALIGN (0x4)
 
-.ARM.extab      0x0000000008006fb8        0x0
-                0x0000000008006fb8                . = ALIGN (0x4)
+.ARM.extab      0x0000000008006fc0        0x0
+                0x0000000008006fc0                . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008006fb8                . = ALIGN (0x4)
+                0x0000000008006fc0                . = ALIGN (0x4)
 
-.ARM            0x0000000008006fb8        0x8
-                0x0000000008006fb8                . = ALIGN (0x4)
-                0x0000000008006fb8                __exidx_start = .
+.ARM            0x0000000008006fc0        0x8
+                0x0000000008006fc0                . = ALIGN (0x4)
+                0x0000000008006fc0                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0000000008006fb8        0x8 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
-                0x0000000008006fc0                __exidx_end = .
-                0x0000000008006fc0                . = ALIGN (0x4)
+ .ARM.exidx     0x0000000008006fc0        0x8 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a(_udivmoddi4.o)
+                0x0000000008006fc8                __exidx_end = .
+                0x0000000008006fc8                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000008006fc0        0x0
- .rel.iplt      0x0000000008006fc0        0x0 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008006fc8        0x0
+ .rel.iplt      0x0000000008006fc8        0x0 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
 
-.preinit_array  0x0000000008006fc0        0x0
-                0x0000000008006fc0                . = ALIGN (0x4)
-                0x0000000008006fc0                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008006fc8        0x0
+                0x0000000008006fc8                . = ALIGN (0x4)
+                0x0000000008006fc8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008006fc0                PROVIDE (__preinit_array_end = .)
-                0x0000000008006fc0                . = ALIGN (0x4)
+                0x0000000008006fc8                PROVIDE (__preinit_array_end = .)
+                0x0000000008006fc8                . = ALIGN (0x4)
 
-.init_array     0x0000000008006fc0        0x4
-                0x0000000008006fc0                . = ALIGN (0x4)
-                0x0000000008006fc0                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008006fc8        0x4
+                0x0000000008006fc8                . = ALIGN (0x4)
+                0x0000000008006fc8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008006fc0        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
-                0x0000000008006fc4                PROVIDE (__init_array_end = .)
-                0x0000000008006fc4                . = ALIGN (0x4)
+ .init_array    0x0000000008006fc8        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+                0x0000000008006fcc                PROVIDE (__init_array_end = .)
+                0x0000000008006fcc                . = ALIGN (0x4)
 
-.fini_array     0x0000000008006fc4        0x4
-                0x0000000008006fc4                . = ALIGN (0x4)
+.fini_array     0x0000000008006fcc        0x4
+                0x0000000008006fcc                . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008006fc4        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
+ .fini_array    0x0000000008006fcc        0x4 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008006fc8                . = ALIGN (0x4)
-                0x0000000008006fc8                _sidata = LOADADDR (.data)
+                0x0000000008006fd0                . = ALIGN (0x4)
+                0x0000000008006fd0                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x28 load address 0x0000000008006fc8
+.data           0x0000000020000000       0x28 load address 0x0000000008006fd0
                 0x0000000020000000                . = ALIGN (0x4)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -5525,11 +5525,11 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  *fill*         0x0000000020000026        0x2 
                 0x0000000020000028                _edata = .
 
-.igot.plt       0x0000000020000028        0x0 load address 0x0000000008006ff0
+.igot.plt       0x0000000020000028        0x0 load address 0x0000000008006ff8
  .igot.plt      0x0000000020000028        0x0 c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x0000000020000028                . = ALIGN (0x4)
 
-.bss            0x0000000020000028      0xc14 load address 0x0000000008006ff0
+.bss            0x0000000020000028      0xc14 load address 0x0000000008006ff8
                 0x0000000020000028                _sbss = .
                 0x0000000020000028                __bss_start__ = _sbss
  *(.bss)
@@ -5598,7 +5598,7 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x0000000020000c3c                __bss_end__ = _ebss
 
 ._user_heap_stack
-                0x0000000020000c3c      0x604 load address 0x0000000008006ff0
+                0x0000000020000c3c      0x604 load address 0x0000000008006ff8
                 0x0000000020000c40                . = ALIGN (0x8)
  *fill*         0x0000000020000c3c        0x4 
                 [!provide]                        PROVIDE (end = .)
@@ -5701,7 +5701,7 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
 LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
 LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x0000000000000000    0x19ac0
+.debug_info     0x0000000000000000    0x19ac8
  .debug_info    0x0000000000000000      0x67d Core/Src/gpio.o
  .debug_info    0x000000000000067d     0x1fd6 Core/Src/main.o
  .debug_info    0x0000000000002653      0x921 Core/Src/rtc.o
@@ -5726,11 +5726,11 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_info    0x00000000000108b2     0x26b0 app/LoRaMac-node/src/radio/sx1276/sx1276.o
  .debug_info    0x0000000000012f62      0xca8 app/board.o
  .debug_info    0x0000000000013c0a       0xe6 app/delay.o
- .debug_info    0x0000000000013cf0     0x1855 app/rf_test.o
- .debug_info    0x0000000000015545     0x1807 app/rtc-board.o
- .debug_info    0x0000000000016d4c     0x1bc9 app/sx1276mb1las-board.o
- .debug_info    0x0000000000018915      0x524 app/timer.o
- .debug_info    0x0000000000018e39      0xc87 app/utilities.o
+ .debug_info    0x0000000000013cf0     0x185d app/rf_test.o
+ .debug_info    0x000000000001554d     0x1807 app/rtc-board.o
+ .debug_info    0x0000000000016d54     0x1bc9 app/sx1276mb1las-board.o
+ .debug_info    0x000000000001891d      0x524 app/timer.o
+ .debug_info    0x0000000000018e41      0xc87 app/utilities.o
 
 .debug_abbrev   0x0000000000000000     0x3d17
  .debug_abbrev  0x0000000000000000      0x1bc Core/Src/gpio.o
@@ -5973,7 +5973,7 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x000000000001b05d       0xb3 app/timer.o
  .debug_macro   0x000000000001b110      0x204 app/utilities.o
 
-.debug_line     0x0000000000000000    0x17669
+.debug_line     0x0000000000000000    0x1766b
  .debug_line    0x0000000000000000      0x780 Core/Src/gpio.o
  .debug_line    0x0000000000000780      0xb93 Core/Src/main.o
  .debug_line    0x0000000000001313      0x79a Core/Src/rtc.o
@@ -5998,13 +5998,13 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x000000000001158e     0x1b7e app/LoRaMac-node/src/radio/sx1276/sx1276.o
  .debug_line    0x000000000001310c      0xa94 app/board.o
  .debug_line    0x0000000000013ba0      0x410 app/delay.o
- .debug_line    0x0000000000013fb0      0xd72 app/rf_test.o
- .debug_line    0x0000000000014d22      0xde7 app/rtc-board.o
- .debug_line    0x0000000000015b09      0xc70 app/sx1276mb1las-board.o
- .debug_line    0x0000000000016779      0x748 app/timer.o
- .debug_line    0x0000000000016ec1      0x7a8 app/utilities.o
+ .debug_line    0x0000000000013fb0      0xd74 app/rf_test.o
+ .debug_line    0x0000000000014d24      0xde7 app/rtc-board.o
+ .debug_line    0x0000000000015b0b      0xc70 app/sx1276mb1las-board.o
+ .debug_line    0x000000000001677b      0x748 app/timer.o
+ .debug_line    0x0000000000016ec3      0x7a8 app/utilities.o
 
-.debug_str      0x0000000000000000    0x9d84e
+.debug_str      0x0000000000000000    0x9d84c
  .debug_str     0x0000000000000000    0x8b531 Core/Src/gpio.o
                                       0x8b7ee (size before relaxing)
  .debug_str     0x000000000008b531     0xc072 Core/Src/main.o
@@ -6053,15 +6053,15 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                                       0x8c034 (size before relaxing)
  .debug_str     0x000000000009c348       0x22 app/delay.o
                                        0x3cdb (size before relaxing)
- .debug_str     0x000000000009c36a      0x10d app/rf_test.o
+ .debug_str     0x000000000009c36a      0x111 app/rf_test.o
                                       0x96f5a (size before relaxing)
- .debug_str     0x000000000009c477      0x86d app/rtc-board.o
+ .debug_str     0x000000000009c47b      0x867 app/rtc-board.o
                                       0x90b51 (size before relaxing)
- .debug_str     0x000000000009cce4      0x2b8 app/sx1276mb1las-board.o
+ .debug_str     0x000000000009cce2      0x2b8 app/sx1276mb1las-board.o
                                       0x96b0b (size before relaxing)
- .debug_str     0x000000000009cf9c      0x1e8 app/timer.o
+ .debug_str     0x000000000009cf9a      0x1e8 app/timer.o
                                        0x4461 (size before relaxing)
- .debug_str     0x000000000009d184      0x6ca app/utilities.o
+ .debug_str     0x000000000009d182      0x6ca app/utilities.o
                                        0x83a7 (size before relaxing)
 
 .comment        0x0000000000000000       0x53

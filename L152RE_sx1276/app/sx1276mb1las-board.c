@@ -306,6 +306,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
       fptr = DioIrq[5];
       break;
     case GPIO_PIN_13:
+    	ButtonPushed = true;
       break;
     default:
       break;
