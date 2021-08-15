@@ -19,6 +19,7 @@
 #include "radio.h"
 #include "sx1276.h"
 #include "time.h"
+#include <stdio.h>
 
 #define REGION_EU433
 #define USE_MODEM_FSK
@@ -106,7 +107,15 @@ uint32_t AverageTime ( uint8_t NumOfAver, int max_count_of_packets );
 uint32_t PerMeasTime ( int max_count_of_packets );
 
 // меняется при нажатии синей кнопки
-bool ButtonPushed = false;
+bool ButtonIsNotPushed;
+
+// Число отправляемых пакетов
+#define NUMBER_OF_PACKETS_SENT 				20
+
+// Число усреднений для расчёта среднего времени
+#define NUMBER_OF_AVERAGING					20
+
+extern UART_HandleTypeDef huart2;
 #endif
 
 void OnTxDone( void );

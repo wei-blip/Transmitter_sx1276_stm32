@@ -7,7 +7,6 @@
 
 #ifdef UART_TEST
   uint8_t data_UART[] = {0x00, 0x00, 0x00, 0x00};
-#define MAX_COUNT_OF_PACKETS 100
 #endif
 static uint32_t count = 0;
 
@@ -138,13 +137,20 @@ void ping_pong_rf (void)
 #endif
 
 #ifdef PER_TEST
-  uint32_t aver_time = AverageTime(10, 50, 0); // замеряем среднее время требуемое для передачи последовательности
-  while ( !ButtonPushed ); // в этот момент настраиваем приёмную сторону для приёма сигнала
+  ButtonIsNotPushed = true;
+  uint32_t aver_time = AverageTime( NUMBER_OF_AVERAGING,
+		  NUMBER_OF_PACKETS_SENT ); // замеряем среднее время требуемое для передачи последовательности
+  HAL_GPIO_WritePin(LED_EXT_GPIO_Port, LED_EXT_Pin, SET);
+  char str[128] = {0};
+  sprintf(str, "%s %lu %s\n\r", "Average time equals:", aver_time, "ms");
+  HAL_UART_Transmit(&huart2, ( uint8_t* )str, sizeof(str), 10); // отсылаем в терминал измеренное время
+  while ( ButtonIsNotPushed ); // в этот момент настраиваем приёмную сторону для приёма сигнала
   while ( 1 ) {
 	  uint32_t TimeB = HAL_GetTick();
-	  PerMeasTime(50); // передаётся "зубец пилы"
-	  while ( ( HAL_GetTick() - TimeB ) >= aver_time );
-	  HAL_Delay(30);	// небольшая задержка чтобы наверняка и продолжаем
+	  PerMeasTime( NUMBER_OF_PACKETS_SENT ); // передаётся "зубец пилы"
+	  while ( ( HAL_GetTick() - TimeB ) <= aver_time );
+	  HAL_Delay( 2*aver_time );	/* такая большая задержка чтобы на приёмной стороне однозначно определить что
+	  передача одного периода последовательности закончилась*/
   }
 
 #endif
@@ -287,8 +293,6 @@ void OnTxDone( void )
 void OnRxDone( uint8_t *payload, uint16_t size, int16_t rssi, int8_t snr )
 {
     HAL_GPIO_TogglePin(LED_EXT_GPIO_Port, LED_EXT_Pin);
-    HAL_Delay(1000);
-    HAL_GPIO_TogglePin(LED_EXT_GPIO_Port, LED_EXT_Pin);
     Radio.Sleep( );
     BufferSize = size;
     memcpy( Buffer, payload, BufferSize );
@@ -342,8 +346,8 @@ uint32_t PerMeasTime ( int max_count_of_packets ) {
 	uint8_t data[] = {0, 0, 0, 0};
 	uint32_t curT = HAL_GetTick();
 	State = TX;
-	*( uint32_t* )data = count;
 	while( count < max_count_of_packets ) {
+		*( uint32_t* )data = count;
 		Radio_TX( data, sizeof(data) );
 		HAL_Delay(30);
 	}
