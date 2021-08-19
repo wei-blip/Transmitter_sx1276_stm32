@@ -19,6 +19,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+#define BER_TEST
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -68,6 +69,10 @@ int main(void)
   MX_SPI2_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
+#ifdef BER_TEST
+  BerTestRun( BARKER_11 );
+#endif
+
   ping_pong_rf();
 //  continuos_wave();
   /* USER CODE END 2 */

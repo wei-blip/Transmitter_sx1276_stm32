@@ -98,13 +98,15 @@
 void ping_pong_rf (void);
 void Radio_TX ( uint8_t *pData, uint8_t size );
 
-#define PER_TEST
+#define BER_TEST
 
 #ifdef PER_TEST
 uint32_t AverageTime ( uint8_t NumOfAver, int max_count_of_packets );
 
 // измеряет время передачи max_count_of_packets пакетов
 uint32_t PerMeasTime ( int max_count_of_packets );
+
+uint32_t count = 0;
 
 // меняется при нажатии синей кнопки
 bool ButtonIsNotPushed;
@@ -116,6 +118,35 @@ bool ButtonIsNotPushed;
 #define NUMBER_OF_AVERAGING					20
 
 extern UART_HandleTypeDef huart2;
+#endif
+
+#ifdef BER_TEST
+
+typedef enum {
+	BARKER_2 = 2,
+	BARKER_3,
+	BARKER_4,
+	BARKER_5,
+	BARKER_7  = 7,
+	BARKER_11 = 11,
+	BARKER_13 = 13,
+}BarkerLen_t;
+
+typedef struct
+{
+	BarkerLen_t  SequenceSize;
+    uint16_t Sequence;
+}BarkerSeq_t;
+
+// В этой инициализации радиоканала будет отключён подсчёт контрольной суммы
+void InitRfBer( void );
+
+// Отправка сообщения с кодом Баркера
+void BerTestRun( BarkerLen_t len );
+
+//
+uint16_t SearchSeq( BarkerLen_t len );
+
 #endif
 
 void OnTxDone( void );

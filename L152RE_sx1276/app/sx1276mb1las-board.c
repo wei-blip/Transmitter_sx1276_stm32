@@ -43,7 +43,8 @@ static bool RadioIsActive = false;
 SX1276_DIO_callbacks_t DioIrqCallbacks;
 extern DioIrqHandler *DioIrq[];
 
-#define PER_TEST
+//#define PER_TEST
+
 #ifdef PER_TEST
 extern bool ButtonIsNotPushed;
 #endif

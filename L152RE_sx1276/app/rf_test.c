@@ -7,8 +7,25 @@
 
 #ifdef UART_TEST
   uint8_t data_UART[] = {0x00, 0x00, 0x00, 0x00};
+  uint32_t count = 0;
 #endif
-static uint32_t count = 0;
+
+#ifdef BER_TEST
+
+// последовательности Баркера которые будут использоваться при отправлении
+
+BarkerSeq_t BarkerSeq[] =
+  {
+  		{ BARKER_2  , 0x0002 },
+  		{ BARKER_3  , 0x0006 },
+  		{ BARKER_4  , 0x000B },
+  		{ BARKER_5  , 0x001D },
+  		{ BARKER_7  , 0x0072 },
+  		{ BARKER_11 , 0x0712 },
+  		{ BARKER_13 , 0x1F35 }
+  };
+
+#endif
 
 void init_rf (void);
 
@@ -82,6 +99,58 @@ void init_rf (void)
 
 }
 
+#ifdef BER_TEST
+
+// все как у init_rf за исключением того, что отключен расчёт контрольной суммы
+
+void InitRfBer( void ) {
+	  // Target board initialization
+	  BoardInitMcu( );
+	  BoardInitPeriph( );
+
+	  // Radio initialization
+	  RadioEvents.TxDone = OnTxDone;
+	  RadioEvents.RxDone = OnRxDone;
+	  RadioEvents.TxTimeout = OnTxTimeout;
+	  RadioEvents.RxTimeout = OnRxTimeout;
+	  RadioEvents.RxError = OnRxError;
+
+	  Radio.Init( &RadioEvents );
+
+	  Radio.SetChannel( RF_FREQUENCY );
+
+#if defined( USE_MODEM_LORA )
+
+  Radio.SetTxConfig( MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
+                                 LORA_SPREADING_FACTOR, LORA_CODINGRATE,
+                                 LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
+                                 true, 0, 0, LORA_IQ_INVERSION_ON, 3000 );
+
+  Radio.SetRxConfig( MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
+                                 LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
+                                 LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
+                                 0, true, 0, 0, LORA_IQ_INVERSION_ON, true );
+
+  Radio.SetMaxPayloadLength( MODEM_LORA, BUFFER_SIZE );
+
+#elif defined( USE_MODEM_FSK )
+
+  Radio.SetTxConfig( MODEM_FSK, TX_OUTPUT_POWER, FSK_FDEV, 0,
+                                FSK_DATARATE, 0,
+                                FSK_PREAMBLE_LENGTH, FSK_FIX_LENGTH_PAYLOAD_ON,
+                                false, 0, 0, 0, 3000 );
+
+  Radio.SetRxConfig( MODEM_FSK, FSK_BANDWIDTH, FSK_DATARATE,
+                                0, FSK_AFC_BANDWIDTH, FSK_PREAMBLE_LENGTH,
+                                0, FSK_FIX_LENGTH_PAYLOAD_ON, 0, false,
+                                0, 0,false, true );
+
+  Radio.SetMaxPayloadLength( MODEM_FSK, BUFFER_SIZE );
+#endif
+}
+
+#endif
+
 #ifdef RTC_TEST
 TimerEvent_t rtc_tim_1 = {0};
 
@@ -137,6 +206,8 @@ void ping_pong_rf (void)
 #endif
 
 #ifdef PER_TEST
+  // в этом файле (sx1276mb1las-board.c) есть дефайн для прерывания на кнопку
+
   ButtonIsNotPushed = true;
   uint32_t aver_time = AverageTime( NUMBER_OF_AVERAGING,
 		  NUMBER_OF_PACKETS_SENT ); // замеряем среднее время требуемое для передачи последовательности
@@ -153,6 +224,12 @@ void ping_pong_rf (void)
 	  передача одного периода последовательности закончилась*/
   }
 
+#endif
+
+#ifdef BER_TEST
+  while(1) {
+
+  }
 #endif
 
   HAL_GPIO_WritePin(LED_EXT_GPIO_Port, LED_EXT_Pin, RESET);
@@ -369,3 +446,26 @@ uint32_t AverageTime ( uint8_t NumOfAver, int max_count_of_packets ) {
 #endif
 
 // Обработчик прерываний в sx1276mb1las-board.c
+
+#ifdef BER_TEST
+
+uint16_t SearchSeq( BarkerLen_t len ) {
+	BarkerSeq_t* pSeq = &BarkerSeq[0];
+	for( ; pSeq <= &BarkerSeq[ sizeof( BarkerSeq )/sizeof( BarkerSeq_t ) - 1 ];  pSeq += sizeof(BarkerSeq_t) ) {
+		if( pSeq->SequenceSize == len ) return pSeq->Sequence;
+	}
+	return 0;
+}
+
+void BerTestRun( BarkerLen_t len ) {
+	InitRfBer();
+	uint8_t data[] = {0, 0};
+	State = TX;
+	uint16_t seq = SearchSeq( len );
+	*( uint16_t* )data = seq;
+	while(1){
+		Radio_TX( data, sizeof( data ) );
+		HAL_Delay(1000);
+	}
+}
+#endif
