@@ -43,11 +43,7 @@ static bool RadioIsActive = false;
 SX1276_DIO_callbacks_t DioIrqCallbacks;
 extern DioIrqHandler *DioIrq[];
 
-//#define PER_TEST
-
-#ifdef PER_TEST
 extern bool ButtonIsNotPushed;
-#endif
 /*!
  * Radio driver structure initialization
  */
@@ -310,11 +306,9 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     case DIO_5_Pin:
       fptr = DioIrq[5];
       break;
-#ifdef PER_TEST
     case GPIO_PIN_13:
     	ButtonIsNotPushed = false;
       break;
-#endif
     default:
       break;
 }

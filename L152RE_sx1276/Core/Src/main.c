@@ -29,6 +29,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+  struct InputParametrsTX_s iparam;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,7 +71,13 @@ int main(void)
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 #ifdef BER_TEST
-  BerTestRun( BARKER_11 );
+  struct BER_TX_s berParam;
+  berParam.len = BARKER_7;
+  struct PER_TX_s perParam = {0};
+  iparam.pBER = &berParam;
+  iparam.pPER = &perParam;
+  iparam.mode = BER;
+  Measurements( &iparam );
 #endif
 
   ping_pong_rf();

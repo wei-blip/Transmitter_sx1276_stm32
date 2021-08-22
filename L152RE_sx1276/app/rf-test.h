@@ -98,29 +98,23 @@
 void ping_pong_rf (void);
 void Radio_TX ( uint8_t *pData, uint8_t size );
 
-#define BER_TEST
-
-#ifdef PER_TEST
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// функции и переменные для измерения PER
 uint32_t AverageTime ( uint8_t NumOfAver, int max_count_of_packets );
 
 // измеряет время передачи max_count_of_packets пакетов
 uint32_t PerMeasTime ( int max_count_of_packets );
 
-uint32_t count = 0;
+uint32_t count;
 
 // меняется при нажатии синей кнопки
 bool ButtonIsNotPushed;
 
-// Число отправляемых пакетов
-#define NUMBER_OF_PACKETS_SENT 				20
-
-// Число усреднений для расчёта среднего времени
-#define NUMBER_OF_AVERAGING					20
-
 extern UART_HandleTypeDef huart2;
-#endif
+// конец
 
-#ifdef BER_TEST
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// функции и переменные для измерения BER
 
 typedef enum {
 	BARKER_2 = 2,
@@ -146,8 +140,33 @@ void BerTestRun( BarkerLen_t len );
 
 //
 uint16_t SearchSeq( BarkerLen_t len );
+// конец
 
-#endif
+struct BER_TX_s {
+	BarkerLen_t len;
+};
+
+struct PER_TX_s {
+	uint16_t NumberOfAverage;
+	int NumberOfPacketSent;
+
+};
+
+typedef enum {
+	BER			,
+	PER			,
+	PING_PONG	,
+}Mode_t;
+
+struct InputParametrsTX_s {
+	struct BER_TX_s* pBER;
+	struct PER_TX_s* pPER;
+	Mode_t mode;
+};
+
+// Общая функция которая запускает либо измерение PER либо BER
+bool Measurements ( struct InputParametrsTX_s* param );
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 void OnTxDone( void );
 

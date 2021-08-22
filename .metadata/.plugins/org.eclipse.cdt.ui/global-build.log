@@ -6663,3 +6663,865 @@ Finished building: L152RE_sx1276.bin
  
 Finished building: L152RE_sx1276.list
  
+17:47:43 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28096	     76	   2556	  30728	   7808	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+17:49:03 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28096	     76	   2556	  30728	   7808	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+17:50:39 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28096	     76	   2556	  30728	   7808	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+17:51:02 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28096	     76	   2556	  30728	   7808	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+17:52:52 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28096	     76	   2556	  30728	   7808	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+18:40:46 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+08:57:46 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+09:08:12 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+12:24:55 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+12:29:26 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+12:43:51 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../app/rf_test.c:1:
+../app/rf-test.h:102:2: error: unknown type name 'BarkerLen_t'
+  102 |  BarkerLen_t len;
+      |  ^~~~~~~~~~~
+In file included from ../Core/Src/main.c:12:
+C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/rf-test.h:102:2: error: unknown type name 'BarkerLen_t'
+  102 |  BarkerLen_t len;
+      |  ^~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [app/subdir.mk:54: app/rf_test.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:44:30 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+12:45:46 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../app/rf_test.c:1:
+../app/rf-test.h:108:2: error: expected specifier-qualifier-list before '*' token
+  108 |  *struct BER_s pBER;
+      |  ^
+In file included from ../Core/Src/main.c:12:
+C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/rf-test.h:108:2: error: expected specifier-qualifier-list before '*' token
+  108 |  *struct BER_s pBER;
+      |  ^
+make: *** [app/subdir.mk:54: app/rf_test.o] Error 1
+make: *** Waiting for unfinished jobs....
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:46:04 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from ../app/rf_test.c:1:
+../app/rf-test.h:171:2: error: expected specifier-qualifier-list before '*' token
+  171 |  *struct BER_s pBER;
+      |  ^
+make: *** [app/subdir.mk:54: app/rf_test.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Core/Src/main.c:12:
+C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/rf-test.h:171:2: error: expected specifier-qualifier-list before '*' token
+  171 |  *struct BER_s pBER;
+      |  ^
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:50:02 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+12:52:11 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/rf_test.c:473:6: error: conflicting types for 'Measurements'
+  473 | void Measurements (Mode_t mode) {
+      |      ^~~~~~~~~~~~
+In file included from ../app/rf_test.c:1:
+../app/rf-test.h:173:6: note: previous declaration of 'Measurements' was here
+  173 | void Measurements ( Mode_t mode, struct InputParametrs_s* param );
+      |      ^~~~~~~~~~~~
+make: *** [app/subdir.mk:54: app/rf_test.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+12:52:39 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+12:57:25 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/rf_test.c: In function 'Measurements':
+../app/rf_test.c:481:1: warning: control reaches end of non-void function [-Wreturn-type]
+  481 | }
+      | ^
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+12:57:59 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+13:00:41 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+13:03:56 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+13:11:08 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28092	     76	   2556	  30724	   7804	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:01:19 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+../app/rf_test.c: In function 'ping_pong_rf':
+../app/rf_test.c:174:3: error: too few arguments to function 'InitRf'
+  174 |   InitRf( );
+      |   ^~~~~~
+../app/rf_test.c:54:13: note: declared here
+   54 | static void InitRf (bool crcOn)
+      |             ^~~~~~
+make: *** [app/subdir.mk:54: app/rf_test.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:01:33 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27876	     76	   2556	  30508	   772c	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:03:49 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+In file included from c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\include\stdio.h:36,
+                 from C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/rf-test.h:22,
+                 from ../Core/Src/main.c:12:
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:75:30: error: invalid initializer
+   75 |   struct PER_TX_s perParam = NULL;
+      |                              ^~~~
+../Core/Src/main.c:75:19: warning: unused variable 'perParam' [-Wunused-variable]
+   75 |   struct PER_TX_s perParam = NULL;
+      |                   ^~~~~~~~
+../Core/Src/main.c:73:19: warning: variable 'berParam' set but not used [-Wunused-but-set-variable]
+   73 |   struct BER_TX_s berParam;
+      |                   ^~~~~~~~
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:04:10 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:75:30: warning: multi-character character constant [-Wmultichar]
+   75 |   struct PER_TX_s perParam = 'NULL';
+      |                              ^~~~~~
+../Core/Src/main.c:75:30: error: invalid initializer
+../Core/Src/main.c:75:19: warning: unused variable 'perParam' [-Wunused-variable]
+   75 |   struct PER_TX_s perParam = 'NULL';
+      |                   ^~~~~~~~
+../Core/Src/main.c:73:19: warning: variable 'berParam' set but not used [-Wunused-but-set-variable]
+   73 |   struct BER_TX_s berParam;
+      |                   ^~~~~~~~
+make: *** [Core/Src/subdir.mk:51: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:04:22 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:75:31: warning: multi-character character constant [-Wmultichar]
+   75 |   struct PER_TX_s perParam = {'NULL'};
+      |                               ^~~~~~
+../Core/Src/main.c:75:31: warning: unsigned conversion from 'int' to 'short unsigned int' changes value from '1314212940' to '19532' [-Woverflow]
+../Core/Src/main.c:75:19: warning: unused variable 'perParam' [-Wunused-variable]
+   75 |   struct PER_TX_s perParam = {'NULL'};
+      |                   ^~~~~~~~
+../Core/Src/main.c:73:19: warning: variable 'berParam' set but not used [-Wunused-but-set-variable]
+   73 |   struct BER_TX_s berParam;
+      |                   ^~~~~~~~
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27896	     76	   2556	  30528	   7740	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:06:45 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27988	     76	   2556	  30620	   779c	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:07:38 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27988	     76	   2556	  30620	   779c	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+14:08:30 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  27988	     76	   2556	  30620	   779c	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:16:16 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+../app/rf_test.c: In function 'PerMeasTime':
+../app/rf_test.c:375:9: error: 'count' undeclared (first use in this function)
+  375 |  while( count < max_count_of_packets ) {
+      |         ^~~~~
+../app/rf_test.c:375:9: note: each undeclared identifier is reported only once for each function it appears in
+../app/rf_test.c: In function 'PerTestRun':
+../app/rf_test.c:397:2: error: too few arguments to function 'InitRf'
+  397 |  InitRf( );
+      |  ^~~~~~
+../app/rf_test.c:54:13: note: declared here
+   54 | static void InitRf (bool crcOn)
+      |             ^~~~~~
+../app/rf_test.c:399:2: error: 'ButtonIsNotPushed' undeclared (first use in this function)
+  399 |  ButtonIsNotPushed = true;
+      |  ^~~~~~~~~~~~~~~~~
+../app/rf_test.c:405:21: error: 'huart2' undeclared (first use in this function)
+  405 |  HAL_UART_Transmit(&huart2, ( uint8_t* )str, sizeof(str), 10); // отсылаем в терминал измеренное время
+      |                     ^~~~~~
+../app/rf_test.c: At top level:
+../app/rf_test.c:416:2: error: #endif without #if
+  416 | #endif
+      |  ^~~~~
+make: *** [app/subdir.mk:54: app/rf_test.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:19:41 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/rf_test.c:412:2: error: #endif without #if
+  412 | #endif
+      |  ^~~~~
+make: *** [app/subdir.mk:54: app/rf_test.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:21:01 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+c:\st\stm32cubeide_1.6.1\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924\tools\arm-none-eabi\bin\ld.exe: app/rf_test.o:C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/Debug/../app/rf-test.h:114: multiple definition of `count'; Core/Src/main.o:C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/rf-test.h:114: first defined here
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:67: L152RE_sx1276.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:23:29 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28648	     76	   4620	  33344	   8240	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:24:05 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28660	     76	   4628	  33364	   8254	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:31:45 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28660	     76	   4628	  33364	   8254	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:32:53 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28660	     76	   4628	  33364	   8254	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:46:15 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28676	     76	   4628	  33380	   8264	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+14:47:44 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:7: error: expected '(' before 'break'
+  312 |       break;
+      |       ^~~~~
+      |       (
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:49:05 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:311:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  311 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:311:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  311 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:311:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:50:34 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c:48:8: warning: type defaults to 'int' in declaration of 'Mode_t' [-Wimplicit-int]
+   48 | extern Mode_t;
+      |        ^~~~~~
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  312 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:312:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:50:41 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c:48:8: error: unknown type name 'Mode_t'
+   48 | extern Mode_t PER;
+      |        ^~~~~~
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+14:53:54 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/rf_test.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/rf_test.d" -MT"app/rf_test.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/rf_test.o"
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:311:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  311 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:311:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  311 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:311:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:01:05 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c:48:13: warning: useless storage class specifier in empty declaration
+   48 | extern enum Mode_t;
+      |             ^~~~~~
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  312 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:312:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:02:40 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/sx1276mb1las-board.c:48:13: warning: useless storage class specifier in empty declaration
+   48 | extern enum Mode_t;
+      |             ^~~~~~
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  312 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:312:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:05:19 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:6: error: 'PER' has an incomplete type 'enum Mode_t'
+  312 |      if ( iparam.mode == PER ) {
+      |      ^~
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:06:02 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:6: error: 'PER' has an incomplete type 'enum Mode_t'
+  312 |      if ( iparam.mode == PER ) {
+      |      ^~
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:07:19 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c:48:13: warning: useless storage class specifier in empty declaration
+   48 | extern enum Mode_t;
+      |             ^~~~~~
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  312 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:312:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:07:39 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28696	     76	   4644	  33416	   8288	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+15:08:10 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c:48:13: warning: useless storage class specifier in empty declaration
+   48 | extern enum Mode_t;
+      |             ^~~~~~
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  312 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:312:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:09:37 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+../app/sx1276mb1las-board.c:48:14: error: expected ';' before 'enum'
+   48 | extern Mode_t enum ;
+      |              ^~~~~
+      |              ;
+../app/sx1276mb1las-board.c:48:20: error: expected '{' before ';' token
+   48 | extern Mode_t enum ;
+      |                    ^
+../app/sx1276mb1las-board.c: In function 'HAL_GPIO_EXTI_Callback':
+../app/sx1276mb1las-board.c:312:17: error: invalid use of undefined type 'struct InputParametrsTX_s'
+  312 |      if ( iparam.mode == PER ) {
+      |                 ^
+../app/sx1276mb1las-board.c:312:26: error: 'PER' undeclared (first use in this function); did you mean 'PWR'?
+  312 |      if ( iparam.mode == PER ) {
+      |                          ^~~
+      |                          PWR
+../app/sx1276mb1las-board.c:312:26: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [app/subdir.mk:58: app/sx1276mb1las-board.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+15:10:10 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28696	     76	   4644	  33416	   8288	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+15:10:15 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-gcc "../app/sx1276mb1las-board.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32L152xE -c -I../Core/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc -I../Drivers/STM32L1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32L1xx/Include -I../Drivers/CMSIS/Include -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio/sx1276" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/radio" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app/LoRaMac-node/src/boards" -I"C:/Users/user/STM32CubeIDE/workspace_1.6.1/L152RE_sx1276/app" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"app/sx1276mb1las-board.d" -MT"app/sx1276mb1las-board.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "app/sx1276mb1las-board.o"
+arm-none-eabi-gcc -o "L152RE_sx1276.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\user\STM32CubeIDE\workspace_1.6.1\L152RE_sx1276\STM32L152RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="L152RE_sx1276.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: L152RE_sx1276.elf
+ 
+arm-none-eabi-objdump -h -S  L152RE_sx1276.elf  > "L152RE_sx1276.list"
+arm-none-eabi-objcopy  -O binary  L152RE_sx1276.elf  "L152RE_sx1276.bin"
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28704	     76	   4644	  33424	   8290	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
+Finished building: L152RE_sx1276.bin
+ 
+Finished building: L152RE_sx1276.list
+ 
+18:26:23 **** Incremental Build of configuration Debug for project L152RE_sx1276 ****
+make -j8 all 
+arm-none-eabi-size   L152RE_sx1276.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28704	     76	   4644	  33424	   8290	L152RE_sx1276.elf
+Finished building: default.size.stdout
+ 
