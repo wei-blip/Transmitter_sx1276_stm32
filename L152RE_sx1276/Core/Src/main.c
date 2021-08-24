@@ -19,7 +19,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define BER_TEST
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -29,7 +28,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-  struct InputParametrsTX_s iparam;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -70,17 +68,16 @@ int main(void)
   MX_SPI2_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
-#ifdef BER_TEST
+  struct InputParametrsTX_s iparam;
   struct BER_TX_s berParam;
-  berParam.len = BARKER_7;
-  struct PER_TX_s perParam = {0};
+  berParam.len = BARKER_11;
+  struct PER_TX_s perParam = { 20 , 20 };
   iparam.pBER = &berParam;
   iparam.pPER = &perParam;
   iparam.mode = BER;
   Measurements( &iparam );
-#endif
 
-  ping_pong_rf();
+//  ping_pong_rf();
 //  continuos_wave();
   /* USER CODE END 2 */
 

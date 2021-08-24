@@ -83,7 +83,7 @@ static void InitRf (bool crcOn)
   Radio.SetTxConfig( MODEM_FSK, TX_OUTPUT_POWER, FSK_FDEV, 0,
                                 FSK_DATARATE, 0,
                                 FSK_PREAMBLE_LENGTH, FSK_FIX_LENGTH_PAYLOAD_ON,
-                                true, 0, 0, 0, 3000 );
+								crcOn, 0, 0, 0, 3000 );
 
   Radio.SetRxConfig( MODEM_FSK, FSK_BANDWIDTH, FSK_DATARATE,
                                 0, FSK_AFC_BANDWIDTH, FSK_PREAMBLE_LENGTH,
@@ -444,7 +444,7 @@ bool Measurements ( struct InputParametrsTX_s* param ) {
 	case PER:
 		if ( param -> pPER != NULL ) {
 			count = 0;
-			InitRf( true );
+			PerTestRun(param->pPER->NumberOfAverage, param->pPER->NumberOfPacketSent);
 		}
 		else return false;
 	break;
